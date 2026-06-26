@@ -3,6 +3,35 @@ import { useState } from 'react'
 const services = [
   {
     id: 1,
+    title: 'Pós-Operatório',
+    description: 'Reabilitação individualizada após cirurgias ortopédicas, abdominais e ginecológicas. Controle do edema, cicatrização otimizada e retorno seguro às atividades com protocolos comprovados.',
+    tags: ['Pós-cirúrgico', 'Cicatrização', 'Funcionalidade'],
+    gradient: 'linear-gradient(135deg, #0a2020, #1a4242)',
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c4a24a" strokeWidth="1.5">
+        <path d="M12 2L3 7v6c0 5.25 3.75 10.15 9 11.25C17.25 23.15 21 18.25 21 13V7L12 2z"/>
+        <path d="M12 9v6M9 12h6"/>
+      </svg>
+    ),
+  },
+  {
+    id: 2,
+    title: 'Pós-Parto',
+    description: 'Acompanhamento especializado no retorno do corpo após o parto. Reabilitação do assoalho pélvico, correção de diástase e fortalecimento progressivo para uma recuperação completa e segura.',
+    tags: ['Assoalho pélvico', 'Diástase', 'Retorno ativo'],
+    gradient: 'linear-gradient(135deg, #0d2b2b, #245e5e)',
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c4a24a" strokeWidth="1.5">
+        <path d="M12 22V12"/>
+        <path d="M12 12C12 7 7 3 7 3s0 5 5 9"/>
+        <path d="M12 12C12 7 17 3 17 3s0 5-5 9"/>
+        <path d="M12 12C7 12 3 7 3 7s4 0 9 5"/>
+        <path d="M12 12C17 12 21 7 21 7s-4 0-9 5"/>
+      </svg>
+    ),
+  },
+  {
+    id: 3,
     title: 'Reabilitação Esportiva',
     description: 'Retorno seguro e eficaz após lesões esportivas, com protocolos específicos para cada modalidade e nível de atleta.',
     tags: ['Lesões esportivas', 'Retorno ao esporte', 'Performance'],
@@ -14,7 +43,7 @@ const services = [
     ),
   },
   {
-    id: 2,
+    id: 4,
     title: 'Prevenção de Lesões e Fortalecimento Muscular',
     description: 'Programas individualizados de fortalecimento e correção para prevenir lesões antes que aconteçam.',
     tags: ['Fortalecimento', 'Prevenção', 'Funcional'],
@@ -26,7 +55,7 @@ const services = [
     ),
   },
   {
-    id: 3,
+    id: 5,
     title: 'Preparação Física',
     description: 'Condicionamento físico orientado e supervisionado para elevar seu desempenho com segurança e eficiência.',
     tags: ['Condicionamento', 'Desempenho', 'Saúde'],
@@ -38,7 +67,7 @@ const services = [
     ),
   },
   {
-    id: 4,
+    id: 6,
     title: 'Terapia Manual',
     description: 'Liberação miofascial, massagem terapêutica e relaxante com técnicas manuais especializadas para alívio da dor e recuperação muscular.',
     tags: ['Miofascial', 'Massagem', 'Relaxamento'],
@@ -51,7 +80,8 @@ const services = [
     ),
   },
   {
-    id: 5,
+    id: 7,
+    gold: true,
     title: 'Dry Needling e Eletroestimulação',
     description: 'Técnicas avançadas para tratamento de pontos gatilho, dor muscular e recuperação acelerada com resultados comprovados.',
     tags: ['Dry needling', 'TENS/FES', 'Dor miofascial'],
@@ -63,7 +93,7 @@ const services = [
     ),
   },
   {
-    id: 6,
+    id: 8,
     title: 'Reeducação Postural e Reprogramação de Movimentos',
     description: 'Correção de padrões posturais e movimentos compensatórios para eliminar dores crônicas e melhorar a qualidade de vida.',
     tags: ['Postura', 'RPG', 'Movimento funcional'],
@@ -75,7 +105,7 @@ const services = [
     ),
   },
   {
-    id: 7,
+    id: 9,
     title: 'Recovery Desportivo',
     description: 'Protocolos de recuperação pós-treino e pós-competição para manter atletas em alto rendimento e reduzir o tempo de inatividade.',
     tags: ['Pós-treino', 'Crioterapia', 'Compressão'],
@@ -90,7 +120,7 @@ const services = [
 
 function ServiceCard({ service, index }) {
   const [hovered, setHovered] = useState(false)
-  const isGold = service.id === 5
+  const isGold = service.gold === true
 
   return (
     <div
