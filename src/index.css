@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #faf8f5;
+  color: #1a4242;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+}
+
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+:root {
+  --teal-950: #0d2b2b;
+  --teal-900: #1a4242;
+  --teal-800: #1e4d4d;
+  --teal-700: #245e5e;
+  --teal-600: #2d7070;
+  --teal-100: #e8f4f4;
+  --teal-50: #f0fafa;
+  --gold-500: #c4a24a;
+  --gold-400: #d4b25a;
+  --gold-300: #e4c270;
+  --cream-50: #faf8f5;
+  --cream-100: #f5f1eb;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #c4a24a 0%, #f0d990 40%, #c4a24a 80%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.7; }
+}
