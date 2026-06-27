@@ -93,7 +93,7 @@ export default function Testimonials() {
                     width: '100%',
                     height: '100%',
                     objectFit: 'cover',
-                    objectPosition: 'top center',
+                    objectPosition: 'center center',
                     display: 'block',
                   }}
                 />
