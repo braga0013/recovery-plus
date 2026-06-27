@@ -1,7 +1,7 @@
 const patients = [
   {
     name: 'Thiago Veigh',
-    role: 'Criador de Conteúdo · Atleta',
+    role: 'Cantor',
     photo: '/images/Thiago%20Veigh.jpeg',
   },
   {
