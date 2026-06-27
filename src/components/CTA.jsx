@@ -102,7 +102,29 @@ export default function CTA() {
               <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
               <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
             </svg>
-            Seguir no Instagram
+            @maisrecovery_
+          </a>
+          <a
+            href="https://www.instagram.com/analuisafisio_/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-flex', alignItems: 'center', gap: '10px',
+              border: '1.5px solid rgba(26,66,66,0.2)',
+              color: '#1a4242', padding: '18px 32px', borderRadius: '100px',
+              fontFamily: 'Inter, sans-serif', fontWeight: 500, fontSize: '15px',
+              textDecoration: 'none',
+              transition: 'all 0.2s',
+            }}
+            onMouseOver={(e) => { e.currentTarget.style.background = '#1a4242'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = '#1a4242' }}
+            onMouseOut={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#1a4242'; e.currentTarget.style.borderColor = 'rgba(26,66,66,0.2)' }}
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+            @analuisafisio_
           </a>
         </div>
 

@@ -34,6 +34,24 @@ export default function Footer() {
             </p>
             <div style={{ display: 'flex', gap: '12px' }}>
               {/* Instagram */}
+              <a href="https://www.instagram.com/analuisafisio_/" target="_blank" rel="noopener noreferrer" style={{
+                width: '36px', height: '36px', borderRadius: '50%',
+                background: 'rgba(255,255,255,0.06)',
+                border: '1px solid rgba(255,255,255,0.1)',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                color: 'rgba(255,255,255,0.6)',
+                transition: 'all 0.2s',
+                textDecoration: 'none',
+              }}
+              onMouseOver={(e) => { e.currentTarget.style.background = 'rgba(196,162,74,0.15)'; e.currentTarget.style.borderColor = '#c4a24a'; e.currentTarget.style.color = '#c4a24a' }}
+              onMouseOut={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'; e.currentTarget.style.color = 'rgba(255,255,255,0.6)' }}
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
               <a href="https://www.instagram.com/maisrecovery_/" target="_blank" rel="noopener noreferrer" style={{
                 width: '36px', height: '36px', borderRadius: '50%',
                 background: 'rgba(255,255,255,0.06)',
