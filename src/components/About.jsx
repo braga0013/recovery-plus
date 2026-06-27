@@ -58,7 +58,7 @@ export default function About() {
                   Ana Luísa Dias
                 </p>
                 <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.65)', margin: 0 }}>
-                  Fisioterapeuta · CREFITO-3
+                  Fisioterapeuta · CREFITO-5
                 </p>
               </div>
             </div>

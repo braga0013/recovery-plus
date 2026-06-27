@@ -3,44 +3,28 @@ import { ChevronLeft, ChevronRight, Star } from 'lucide-react'
 
 const testimonials = [
   {
-    name: 'Mariana S.',
-    role: 'Pós-parto',
-    text: 'A Ana Luísa foi fundamental na minha recuperação após o parto. O acompanhamento dela foi tão cuidadoso e humanizado que me senti completamente segura em cada etapa. Indico para todas as mamães!',
+    name: 'Thiago Veigh',
+    role: 'Criador de Conteúdo · Atleta',
+    text: 'A Ana Luísa é simplesmente incrível! Fiz meu acompanhamento pós-treino com ela e a diferença no meu desempenho e recuperação foi absurda. Profissional de alto nível, super atenta e com protocolos específicos para cada necessidade. Recomendo demais!',
     stars: 5,
-    initials: 'MS',
-    color: '#1a4242',
+    photo: '/images/Thiago%20Veigh.jpeg',
+    verified: true,
   },
   {
-    name: 'Carolina M.',
-    role: 'Fisioterapia Pélvica',
-    text: 'Sofria com incontinência há anos e achava que era algo normal. Graças ao tratamento pélvico com a Ana Luísa, minha qualidade de vida mudou completamente. Profissional incrível!',
+    name: 'Nilmar (Ex Inter)',
+    role: 'Ex-atacante · Internacional',
+    text: 'Durante minha carreira passei por lesões sérias, mas o acompanhamento da Ana Luísa foi diferente de tudo que já vi. Trabalho impecável, muito conhecimento técnico e um cuidado genuíno com o atleta. Ela fez toda a diferença na minha recuperação!',
     stars: 5,
-    initials: 'CM',
-    color: '#245e5e',
+    photo: '/images/Nilmar%20(Ex%20Inter).jpeg',
+    verified: true,
   },
   {
-    name: 'Juliana P.',
-    role: 'Pós-operatório',
-    text: 'Fiz cirurgia e tive o acompanhamento pós-operatório com ela. A cicatrização foi muito mais rápida do que o esperado. O taping e o protocolo dela fizeram toda a diferença na minha recuperação.',
+    name: 'Bolívar (Ex Inter)',
+    role: 'Ex-jogador · Internacional',
+    text: 'Passei anos dependendo de fisioterapia de qualidade e posso afirmar que a Ana Luísa está entre as melhores. Protocolo de recuperação eficiente, atendimento humanizado e resultados surpreendentemente rápidos. Nota dez!',
     stars: 5,
-    initials: 'JP',
-    color: '#1e4d4d',
-  },
-  {
-    name: 'Fernanda R.',
-    role: 'Gestante',
-    text: 'Fiz acompanhamento durante toda a gravidez e não poderia ter feito escolha melhor. A Ana Luísa me preparou para o parto de uma forma que me deixou muito mais tranquila e confiante.',
-    stars: 5,
-    initials: 'FR',
-    color: '#0d2b2b',
-  },
-  {
-    name: 'Amanda T.',
-    role: 'Injetáveis',
-    text: 'Realizei aplicação de botox com a Ana Luísa e o resultado ficou naturalmente lindo! Técnica impecável, ambiente acolhedor e ela explicou tudo antes de começar. Amei!',
-    stars: 5,
-    initials: 'AT',
-    color: '#b89040',
+    photo: '/images/Bol%C3%ADvar%20(Ex%20Inter).jpeg',
+    verified: true,
   },
 ]
 
@@ -145,18 +129,22 @@ export default function Testimonials() {
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
               <div style={{
-                width: '52px', height: '52px', borderRadius: '50%',
-                background: `linear-gradient(135deg, ${t.color}, ${t.color}88)`,
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                flexShrink: 0,
+                width: '56px', height: '56px', borderRadius: '50%',
+                overflow: 'hidden', flexShrink: 0,
+                border: '2px solid rgba(196,162,74,0.3)',
+                background: '#1a4242',
               }}>
-                <span style={{ fontFamily: 'Inter, sans-serif', fontWeight: 700, fontSize: '16px', color: '#fff' }}>
-                  {t.initials}
-                </span>
+                <img src={t.photo} alt={t.name} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }} />
               </div>
               <div>
-                <div style={{ fontFamily: 'Inter, sans-serif', fontWeight: 600, fontSize: '15px', color: '#1a4242' }}>
+                <div style={{ fontFamily: 'Inter, sans-serif', fontWeight: 600, fontSize: '15px', color: '#1a4242', display: 'flex', alignItems: 'center', gap: '6px' }}>
                   {t.name}
+                  {t.verified && (
+                    <svg width="15" height="15" viewBox="0 0 24 24" style={{ flexShrink: 0 }}>
+                      <path d="M12 0L14.59 3.07L18.51 2.22L19.22 6.17L22.63 8L21 11.86L22.63 15.72L19.22 17.55L18.51 21.5L14.59 20.65L12 23.72L9.41 20.65L5.49 21.5L4.78 17.55L1.37 15.72L3 11.86L1.37 8L4.78 6.17L5.49 2.22L9.41 3.07Z" fill="#1d9bf0"/>
+                      <path d="M8 12L10.5 14.5L16 9" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+                    </svg>
+                  )}
                 </div>
                 <div style={{ fontFamily: 'Inter, sans-serif', fontSize: '13px', color: '#c4a24a', marginTop: '2px' }}>
                   {t.role}

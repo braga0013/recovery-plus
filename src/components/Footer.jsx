@@ -53,7 +53,7 @@ export default function Footer() {
                 </svg>
               </a>
               {/* WhatsApp */}
-              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" style={{
+              <a href="https://wa.me/5551991135158" target="_blank" rel="noopener noreferrer" style={{
                 width: '36px', height: '36px', borderRadius: '50%',
                 background: 'rgba(255,255,255,0.06)',
                 border: '1px solid rgba(255,255,255,0.1)',
@@ -125,9 +125,9 @@ export default function Footer() {
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
               {[
-                { icon: '📱', text: '(11) 9 9999-9999', href: 'https://wa.me/5511999999999' },
-                { icon: '📍', text: 'São Paulo, SP', href: null },
-                { icon: '🕐', text: 'Seg–Sex 8h às 19h', href: null },
+                { icon: '📱', text: '(51) 99113-5158', href: 'https://wa.me/5551991135158' },
+                { icon: '📍', text: 'Av. Assis Brasil 3982 - Grand Park Lindóia', href: null },
+                { icon: '🕐', text: 'Seg–Sáb, 7h às 22h', href: null },
               ].map((c) => (
                 c.href ? (
                   <a key={c.text} href={c.href} target="_blank" rel="noopener noreferrer" style={{
@@ -161,7 +161,7 @@ export default function Footer() {
             © {year} Recovery+ · Ana Luísa Dias · Todos os direitos reservados
           </p>
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: 'rgba(255,255,255,0.2)', margin: 0 }}>CREFITO-3 · SP</p>
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: 'rgba(255,255,255,0.2)', margin: 0 }}>CREFITO-5 · RS</p>
             <a href="/gestao" style={{ fontFamily: 'Inter, sans-serif', fontSize: '11px', color: 'rgba(255,255,255,0.18)', textDecoration: 'none', letterSpacing: '0.5px', transition: 'color 0.2s' }}
               onMouseOver={e => e.target.style.color = 'rgba(196,162,74,0.6)'}
               onMouseOut={e => e.target.style.color = 'rgba(255,255,255,0.18)'}

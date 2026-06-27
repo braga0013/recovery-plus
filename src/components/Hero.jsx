@@ -103,7 +103,7 @@ export default function Hero() {
               textTransform: 'uppercase',
               marginBottom: '28px',
             }}>
-              Fisioterapeuta · CREFITO-3
+              Fisioterapeuta · CREFITO-5
             </p>
 
             <p style={{

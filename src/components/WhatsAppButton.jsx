@@ -11,7 +11,7 @@ export default function WhatsAppButton() {
     return () => { clearTimeout(timer); clearTimeout(tooltipTimer) }
   }, [])
 
-  const waUrl = 'https://wa.me/5511999999999?text=Olá%20Ana%20Luísa!%20Gostaria%20de%20agendar%20uma%20consulta.'
+  const waUrl = 'https://wa.me/5551991135158?text=Olá%20Ana%20Luísa!%20Gostaria%20de%20agendar%20uma%20consulta.'
 
   return (
     <div style={{
