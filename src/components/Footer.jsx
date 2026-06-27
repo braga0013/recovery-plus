@@ -34,7 +34,7 @@ export default function Footer() {
             </p>
             <div style={{ display: 'flex', gap: '12px' }}>
               {/* Instagram */}
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{
+              <a href="https://www.instagram.com/maisrecovery_/" target="_blank" rel="noopener noreferrer" style={{
                 width: '36px', height: '36px', borderRadius: '50%',
                 background: 'rgba(255,255,255,0.06)',
                 border: '1px solid rgba(255,255,255,0.1)',

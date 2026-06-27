@@ -83,7 +83,7 @@ export default function CTA() {
           </a>
 
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/maisrecovery_/"
             target="_blank"
             rel="noopener noreferrer"
             style={{
