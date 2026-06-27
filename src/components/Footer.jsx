@@ -162,10 +162,6 @@ export default function Footer() {
           </p>
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
             <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', color: 'rgba(255,255,255,0.2)', margin: 0 }}>CREFITO-5 · RS</p>
-            <a href="/gestao" style={{ fontFamily: 'Inter, sans-serif', fontSize: '11px', color: 'rgba(255,255,255,0.18)', textDecoration: 'none', letterSpacing: '0.5px', transition: 'color 0.2s' }}
-              onMouseOver={e => e.target.style.color = 'rgba(196,162,74,0.6)'}
-              onMouseOut={e => e.target.style.color = 'rgba(255,255,255,0.18)'}
-            >Área Profissional</a>
           </div>
         </div>
       </div>
